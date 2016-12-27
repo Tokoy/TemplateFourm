@@ -1,0 +1,15 @@
+#myDIV {
+			width: 100px;
+			height: 100px;
+			background: black;
+			transition: width 2s;
+		}
+#myDIV:hover {
+	width: 300px;
+}
+
+body{
+	background-color:#f2f2f2;
+	line-height:1.75em;
+	font-family:"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+}
