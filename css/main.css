@@ -13,3 +13,61 @@ body{
 	line-height:1.75em;
 	font-family:"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
 }
+
+#right{
+    position:absolute;
+    top:50px;
+    left:200px;
+    bottom:0;
+    right:0;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+.sidebar .widget {
+  background: #ffffff;
+  padding: 21px 30px;
+}
+.widget{
+	margin-bottom:35px;
+}
+
+.widget .title {
+  margin-top: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.widget .tag-cloud a {
+  border: 1px solid #ebebeb;
+  padding: 2px 7px;
+  color: #959595;
+  line-height: 1.5em;
+  display: inline-block;
+  margin: 0 7px 7px 0;
+  -webkit-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+}
+
+.widget .tag-cloud a:hover {
+  color: #ffffff;
+  background: #e6e6e6;
+  border: 1px solid #adadad;
+  text-decoration: none;
+}
+.modal-header{
+	padding:15px;
+	border-bottom:1px solid #e5e5e5;
+}
+
+.modal-footer{
+	padding:15px;
+	border-top:1px solid #e5e5e5;
+	background-color:#fff;
+}
+.control-group {
+	background-color:#fff;
+}
