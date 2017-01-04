@@ -21,7 +21,7 @@ app.config(function($routeProvider,$locationProvider) {
 			controller  : ''
 		})
 		 // use the HTML5 History API
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(false);
 });
 // create the controller and inject Angular's $scope
 app.controller('myCtrl', function($scope,$http) {
@@ -38,8 +38,11 @@ app.controller('myCtrl', function($scope,$http) {
 
 	});
 $(function(){
-        $(".jump").click(function(){
-            $("#mymodal").modal("toggle");
+        $(".register").click(function(){
+            $("#registermodal").modal("toggle");
+        });
+		$(".login").click(function(){
+            $("#loginmodal").modal("toggle");
         });
 		$('.carousel').carousel({
 		  interval: 8000
