@@ -12,6 +12,8 @@ body{
 	background-color:#f2f2f2;
 	line-height:1.75em;
 	font-family:"Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+	padding-top: 70px;
+	background:url('./bg.jpg') repeat center center fixed;
 }
 
 #right{
@@ -27,11 +29,13 @@ body{
 .sidebar .widget{
   background: #ffffff;
   padding: 21px 30px;
+  box-shadow: 0 8px 17px rgba(0, 0, 0, .2);
 }
 .post{
 	background: #ffffff;
 	padding: 21px 30px;
 	margin-bottom:35px;
+	box-shadow: 0 8px 17px rgba(0, 0, 0, .2);
 }
 .post-header{
 	padding:15px;
@@ -99,4 +103,74 @@ body{
 .control-group {
 	margin-bottom:20px;
 	margin-left:150px;
+}
+
+.center-form{
+	width:330px;
+	margin:12% auto;
+}
+.panel{
+	border-color:#cfd9D7;
+	border-radius:2px;
+	box-shadow: 0 8px 17px rgba(0, 0, 0, .2);
+}
+.has-feedback .form-control-feedback {
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    color: #555;
+}
+.text-muted {
+    color: #90939a;
+}
+.signup-or-separator {
+    position: relative;
+    height: 34px;
+    text-align: center;
+    background: none;
+}
+.signup-or-separator .text {
+    display: inline-block;
+    padding: 8px;
+    margin: 0;
+    background-color: #fff;
+}
+::-moz-selection {
+  color: #ffffff;
+  background: #f4645f;
+  text-shadow: none;
+}
+::selection {
+  color: #ffffff;
+  background: #f4645f;
+  text-shadow: none;
+}
+#back-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background:black;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 2px;
+  z-index: 1;
+  display: none;
+}
+#back-to-top:hover {
+  background: #989494;
+}
+#back-to-top i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.btn-github {
+    color: #fff;
+    background-color: #0090c7;
+    border: 1px solid #3b3b3b;
+}
+.panel-default > .panel-heading {
+    background-color: #fff;
 }
