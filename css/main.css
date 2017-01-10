@@ -174,3 +174,7 @@ body{
 .panel-default > .panel-heading {
     background-color: #fff;
 }
+.icon{
+	margin-top: 4px;
+	margin-right: 4px;
+}

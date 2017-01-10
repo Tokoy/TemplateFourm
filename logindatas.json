@@ -1,0 +1,9 @@
+﻿{
+"userdatas":[
+	{"username":"Ike","email":"2303870038@qq.com","img":"user1.jpg","password":""},
+	{"username":"admin","email":"admin@qq.com","img":"user2.jpg","password":""}],
+"country":[
+	{"city":"China"},
+	{"city":"Japan"},
+	{"city":"America"}]
+}

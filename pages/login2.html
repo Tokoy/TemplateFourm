@@ -1,4 +1,4 @@
-<div class="modal fade" id="loginmodal">
+<div class="modal fade" id="loginmodal" ng-app="myApp" ng-controller="myCtrl">
 <div class="row">
     <div class="center-form panel">
       <div class="panel-body">
@@ -17,15 +17,12 @@
             <span class="ion-key form-control-feedback"></span>
             <!-- ngIf: signupForm.password.$dirty -->
           </div>
-		  <button disabled="disabled" type="submit" ng-disabled="signupForm.$invalid" class="btn btn-lg btn-block btn-success">Log in</button>
+		  <button disabled="disabled" type="submit" ng-disabled="signupForm.$invalid" class="btn btn-lg btn-block btn-success" ng-click="toggle()">Log in</button>
 		  <br/>
 		  <p class="text-center text-muted">
             <small>Don't have an account yet? <a href="/#/signup">Sign up</a></small>
           </p>
         </form>
-		<button class="btn btn-block btn-github" ng-click="authenticate('github')">
-          <i class="ion-social-github"></i> Sign in with GitHub
-        </button>
       </div>
     </div>
   </div>

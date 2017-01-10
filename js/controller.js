@@ -26,15 +26,39 @@ app.config(function($routeProvider,$locationProvider) {
 // create the controller and inject Angular's $scope
 app.controller('myCtrl', function($scope,$http) {
 	$scope.visible = false;
+
 	$scope.toggle = function(){
 		$scope.visible = !$scope.visible;
 	}
-	
+
 	$http.get("./test.json").success(function(response){
 		$scope.datas = response;
 		//alert(JSON.stringify($scope.datas));//这样获取到的只是整个json的内容。
 		//alert(JSON.stringify($scope.datas.id));这样返回的值是undefined。
-	}).error(function(){})
+	}).error(function(){
+		alert("fail...")
+	});
+//   获取用户数据
+	$scope.user={
+		name:"ike",
+		email:"2303870038@qq.com",
+		Password:"123"	
+	};
+	$scope.find = function(){
+		$http({
+			method : "GET",
+			url : "./logindatas.json",
+			params : {
+				'country':0
+			}
+		}).success(function(response){
+			$scope.userdata=response;
+		}).error(function(){
+			alert("fail...")
+		});
+	};
+// 	调用find函数
+	$scope.find();
 	
 	  $scope.oneAtATime = true;
 
