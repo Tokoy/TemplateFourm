@@ -78,7 +78,7 @@ app.controller('myCtrl', function($scope,$http) {
 		  var Person='sonmebody'
 		  var Time = '2017/1'
 		  var newdata={Title,Content,Person,Time}
-		  $scope.datas.push(newdata)
+		  $scope.datas.unshift(newdata)
 		  
 	  };
 	  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
