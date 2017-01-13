@@ -72,7 +72,15 @@ app.controller('myCtrl', function($scope,$http) {
 		  content: 'Dynamic Group Body - 2'
 		}
 	  ];
-
+	  $scope.addpage = function() {
+		  var Title='addtitle'
+		  var Content='this is add content'
+		  var Person='sonmebody'
+		  var Time = '2017/1'
+		  var newdata={Title,Content,Person,Time}
+		  $scope.datas.push(newdata)
+		  
+	  };
 	  $scope.items = ['Item 1', 'Item 2', 'Item 3'];
 
 	  $scope.addItem = function() {
